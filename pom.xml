@@ -77,12 +77,12 @@
 
   <modules>
     <module>parent-biz</module>
-    <module>parent-web</module>
     <module>parent-dao</module>
     <module>parent-service</module>
     <module>parent-facade</module>
     <module>parent-integration</module>
     <module>parent-common</module>
+    <module>parent-web</module>
   </modules>
 
 
