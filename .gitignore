@@ -1,0 +1,21 @@
+# Intellij
+*.iml
+*/target/*
+.idea/*
+*.log
+*/.output/*
+
+# Eclipse
+.settings
+.classpath
+.project
+**/.classpath
+**/.project
+
+# Mac
+.DS_Store
+
+# Maven
+#log/
+target/
+.gitignore
