@@ -17,14 +17,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="maven_parent" target="1.7" />
-      <module name="parent-biz" target="1.7" />
-      <module name="parent-common" target="1.7" />
-      <module name="parent-dao" target="1.7" />
-      <module name="parent-facade" target="1.7" />
-      <module name="parent-integration" target="1.7" />
-      <module name="parent-service" target="1.7" />
-      <module name="parent-web" target="1.7" />
+      <module name="maven_parent" target="1.8" />
+      <module name="parent-biz" target="1.5" />
+      <module name="parent-common" target="1.5" />
+      <module name="parent-dao" target="1.5" />
+      <module name="parent-facade" target="1.5" />
+      <module name="parent-integration" target="1.5" />
+      <module name="parent-service" target="1.5" />
+      <module name="parent-web" target="1.5" />
       <module name="parentbiz" target="1.7" />
     </bytecodeTargetLevel>
   </component>
