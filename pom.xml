@@ -11,10 +11,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
+    <junit.version>4.11</junit.version>
+
+
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <!-- 骨架 start -->
       <dependency>
         <groupId>com.sun</groupId>
         <artifactId>parent-facade</artifactId>
@@ -45,6 +49,16 @@
         <artifactId>parent-common</artifactId>
         <version>1.0-SNAPSHOT</version>
       </dependency>
+      <!-- 骨架 end -->
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+
     </dependencies>
   </dependencyManagement>
 
@@ -83,6 +97,7 @@
     <module>parent-integration</module>
     <module>parent-common</module>
     <module>parent-web</module>
+    <module>parent-test</module>
   </modules>
 
 

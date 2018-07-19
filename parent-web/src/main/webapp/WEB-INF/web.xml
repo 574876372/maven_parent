@@ -4,7 +4,7 @@
 	version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
 
 
-	<display-name>Archetype Created Web Application</display-name>
+	<display-name>parent-web</display-name>
 
 
 </web-app>
