@@ -1,21 +1,15 @@
+
 # Intellij
 *.iml
 */target/*
 .idea/*
 *.log
 */.output/*
-
-# Eclipse
-.settings
-.classpath
-.project
-**/.classpath
-**/.project
-
-# Mac
-.DS_Store
-
-# Maven
-#log/
-target/
-.gitignore
+parent-biz/target/
+parent-common/target/
+parent-dao/target/
+parent-facade/target/
+parent-integration/target/
+parent-service/target/
+parent-test/target/
+parent-web/target/
