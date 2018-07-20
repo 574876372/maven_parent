@@ -13,6 +13,20 @@
     <java.version>1.8</java.version>
     <junit.version>4.11</junit.version>
 
+    <spring.version>4.1.7.RELEASE</spring.version>
+    <servlet.version>3.1.0</servlet.version>
+    <javax.servlet.jsp>2.3.1</javax.servlet.jsp>
+    <freemarker.version>2.3.23</freemarker.version>
+    <commons-lang3.version>3.3</commons-lang3.version>
+    <commons-codec.version>1.10</commons-codec.version>
+    <xstream.version>1.4.2</xstream.version>
+    <apache-httpclient>4.3.6</apache-httpclient>
+    <commons-httpclient>3.1</commons-httpclient>
+    <freemarker.version>2.3.23</freemarker.version>
+    <c3p0.version>0.9.1.2</c3p0.version>
+
+    <mybatis.version>3.3.1</mybatis.version>
+    <mybatis.spring.version>1.2.4</mybatis.spring.version>
 
   </properties>
 
@@ -51,13 +65,134 @@
       </dependency>
       <!-- 骨架 end -->
 
+
+      <!-- 单元测试 start -->
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+      <!-- 单元测试 end -->
 
+      <!-- springframework  start -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-oxm</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <!-- springframework  end -->
+
+      <!-- servlet start -->
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>${servlet.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>javax.servlet.jsp-api</artifactId>
+        <version>${javax.servlet.jsp}</version>
+        <scope>provided</scope>
+      </dependency>
+      <!-- servlet end -->
+
+      <!-- freemarker start -->
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
+      </dependency>
+      <!-- freemarker end -->
+
+      <!-- commons start -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+      <!-- commons end -->
+
+      <!-- Commons Codec就提供了一些公共的编解码实现，比如Base64, Hex, MD5,Phonetic and URLs等等。 -->
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
+      </dependency>
+
+      <!-- Xstream是一种OXMapping 技术，是用来处理XML文件序列化的框架,在将javaBean序列化，或将XML文件反序列化的时候，不需要其它辅助类和映射文件-->
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>${xstream.version}</version>
+      </dependency>
+
+      <!-- HTTP协议的客户端编程工具包 -->
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${apache-httpclient}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>${commons-httpclient}</version>
+      </dependency>
+
+
+      <!-- freemarker start -->
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
+      </dependency>
+      <!-- freemarker end -->
+
+      <!-- c3p0 start-->
+      <dependency>
+        <groupId>c3p0</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>${c3p0.version}</version>
+      </dependency>
+      <!-- c3p0 end-->
+
+      <!-- mybatis  -->
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>${mybatis.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis-spring</artifactId>
+        <version>${mybatis.spring.version}</version>
+      </dependency>
 
     </dependencies>
   </dependencyManagement>
@@ -72,7 +207,6 @@
           <encoding>${project.build.sourceEncoding}</encoding>
           <source>${java.version}</source>
           <target>${java.version}</target>
-          <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
       <plugin>
