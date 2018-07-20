@@ -1,5 +1,7 @@
 package com.sun.parent.web.controller;
 
+import com.sun.parent.facade.DemoFacade;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,10 +17,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class DemoController {
 
+    @Autowired
+    private DemoFacade demoFacade;
+
     @ResponseBody
     @RequestMapping(value = "/testDemo",method = RequestMethod.GET)
     public String testDemo(){
 
-        return "00";
+        return demoFacade.testDemo();
     }
 }
