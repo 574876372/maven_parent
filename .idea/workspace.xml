@@ -7,26 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f243ecd3-a8a5-4aa7-877b-5a6cb28eaa6b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/utils/BeanCopierUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/bean/Demo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/impl/DemoServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/parent-biz.iml" afterPath="$PROJECT_DIR$/parent-biz/parent-biz.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-common/parent-common.iml" afterPath="$PROJECT_DIR$/parent-common/parent-common.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-common/pom.xml" afterPath="$PROJECT_DIR$/parent-common/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/parent-dao.iml" afterPath="$PROJECT_DIR$/parent-dao/parent-dao.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/pom.xml" afterPath="$PROJECT_DIR$/parent-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/src/main/java/com/sun/parent/dao/mapper/DemoDOMapper.java" afterPath="$PROJECT_DIR$/parent-dao/src/main/java/com/sun/parent/dao/mapper/DemoDOMapper.java" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/src/main/resources/configs/spring/db.properties" afterPath="$PROJECT_DIR$/parent-dao/src/main/resources/configs/spring/db.properties" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/src/main/resources/sqlMapper/DemoDOMapper.xml" afterPath="$PROJECT_DIR$/parent-dao/src/main/resources/sqlMapper/DemoDOMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-integration/pom.xml" afterPath="$PROJECT_DIR$/parent-integration/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-service/parent-service.iml" afterPath="$PROJECT_DIR$/parent-service/parent-service.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-service/pom.xml" afterPath="$PROJECT_DIR$/parent-service/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/DemoService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/DemoService.java" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/DemoService.java" />
-      <change beforePath="$PROJECT_DIR$/parent-web/parent-web.iml" afterPath="$PROJECT_DIR$/parent-web/parent-web.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/parent-biz/target/" />
     <ignored path="$PROJECT_DIR$/parent-dao/target/" />
@@ -441,7 +422,7 @@
       <workItem from="1531990068141" duration="5076000" />
       <workItem from="1532055723990" duration="19481000" />
       <workItem from="1532393021528" duration="5827000" />
-      <workItem from="1532398926198" duration="526000" />
+      <workItem from="1532398926198" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis生成文件">
       <created>1532081607832</created>
@@ -450,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532081607832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="简单查询流程">
+      <created>1532399520900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532399520901</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35205000" />
+    <option name="totallyTimeSpent" value="35559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -500,7 +488,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mybatis生成文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis生成文件" />
+    <MESSAGE value="简单查询流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="简单查询流程" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,6 +727,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
+            <element signature="e#496#497#0" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#555#556#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#654#655#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#796#797#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -807,6 +809,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -849,6 +852,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <marker date="1532397089479" expanded="true" signature="561:660" ph="select from demo" />
+            <marker date="1532397089479" expanded="true" signature="743:796" ph="delete from demo... " />
+            <marker date="1532397089479" expanded="true" signature="884:972" ph="insert into demo... " />
+            <marker date="1532397089479" expanded="true" signature="1590:1743" ph="update demo... " />
+            <marker date="1532397089479" expanded="true" signature="1843:1931" ph="update demo... " />
+            <marker date="1532397089479" expanded="true" signature="2069:2156" ph="select * fro... demo" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -856,6 +867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -863,6 +875,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
