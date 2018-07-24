@@ -1,5 +1,8 @@
 package com.sun.parent.biz.action;
 
+import com.sun.parent.service.repository.DemoService;
+import com.sun.parent.service.repository.bean.Demo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,8 +15,14 @@ import org.springframework.stereotype.Component;
 public class DemoFacadeAction {
 
 
+    @Autowired
+    private DemoService demoService;
+
     public String businessExecute(){
-        return  "";
+        Demo demo = new Demo();
+        demo.setId(1l);
+        Demo result = demoService.selectOne(demo);
+        return  result.getName();
     }
 
 

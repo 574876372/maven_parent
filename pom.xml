@@ -18,6 +18,9 @@
     <javax.servlet.jsp>2.3.1</javax.servlet.jsp>
     <freemarker.version>2.3.23</freemarker.version>
     <commons-lang3.version>3.3</commons-lang3.version>
+    <commons-beanutils.verison>1.9.3</commons-beanutils.verison>
+    <cglib-parent.version>3.2.5</cglib-parent.version>
+
     <commons-codec.version>1.10</commons-codec.version>
     <xstream.version>1.4.2</xstream.version>
     <apache-httpclient>4.3.6</apache-httpclient>
@@ -144,6 +147,16 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.verison}</version>
+      </dependency>
+      <dependency>
+        <groupId>cglib</groupId>
+        <artifactId>cglib-parent</artifactId>
+        <version>${cglib-parent.version}</version>
       </dependency>
       <!-- commons end -->
 

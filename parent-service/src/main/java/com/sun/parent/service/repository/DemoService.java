@@ -1,5 +1,7 @@
 package com.sun.parent.service.repository;
 
+import com.sun.parent.service.repository.bean.Demo;
+
 /**
  * @Author:ChenLei
  * @Description: com.sun.parent.service.repository.DemoService.java
@@ -8,5 +10,11 @@ package com.sun.parent.service.repository;
  */
 public interface DemoService {
 
+    /**
+     *
+     * @param demo
+     * @return
+     */
+    public Demo selectOne(Demo demo);
 
 }
