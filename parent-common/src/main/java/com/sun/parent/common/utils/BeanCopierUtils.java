@@ -5,20 +5,15 @@
 //
 //package com.sun.parent.common.utils;
 //
-//import java.util.ArrayList;
-//import java.util.HashMap;
-//import java.util.Iterator;
-//import java.util.List;
+//import java.util.*;
+//
 //import net.sf.cglib.beans.BeanCopier;
 //import net.sf.cglib.core.Converter;
 //
 //public final class BeanCopierUtils {
 //    private static final Map<String, BeanCopier> BEANCOPIER_MAP;
 //
-//    static {
-//        LOGGER = LoggerAdapterFactory.getLogger(CommonLogType.SYS_COMMON.getLogName());
-//        BEANCOPIER_MAP = new HashMap();
-//    }
+//
 //
 //    private BeanCopierUtils() {
 //    }
