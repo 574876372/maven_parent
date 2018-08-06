@@ -18,6 +18,7 @@
     </properties>
 
     <dependencies>
+        <!-- 骨架 start -->
         <dependency>
             <groupId>com.sun</groupId>
             <artifactId>parent-facade</artifactId>
@@ -26,7 +27,30 @@
             <groupId>com.sun</groupId>
             <artifactId>parent-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>parent-common</artifactId>
+        </dependency>
+        <!-- 骨架 end -->
 
+        <!-- logback start -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.logback-extensions</groupId>
+            <artifactId>logback-ext-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+        </dependency>
+        <!-- logback end -->
         
     </dependencies>
 
