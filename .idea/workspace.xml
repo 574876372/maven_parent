@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f243ecd3-a8a5-4aa7-877b-5a6cb28eaa6b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/APPCodeEnum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/biz/BizExceptionHandler.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/impl/DemoFacadeBiz.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/impl/DemoFacadeBiz.java" />
-      <change beforePath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/base/CommonException.java" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/base/CommonException.java" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/parent-dao.iml" afterPath="$PROJECT_DIR$/parent-dao/parent-dao.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/pom.xml" afterPath="$PROJECT_DIR$/parent-dao/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-service/parent-service.iml" afterPath="$PROJECT_DIR$/parent-service/parent-service.iml" />
-      <change beforePath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/DemoService.java" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/DemoService.java" />
-      <change beforePath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/impl/DemoServiceImpl.java" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/impl/DemoServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/parent-biz/target/" />
     <ignored path="$PROJECT_DIR$/parent-dao/target/" />
@@ -583,7 +573,7 @@
       <workItem from="1533279111817" duration="9633000" />
       <workItem from="1533517184484" duration="286000" />
       <workItem from="1533526073604" duration="14541000" />
-      <workItem from="1533602994813" duration="11801000" />
+      <workItem from="1533602994813" duration="12103000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis生成文件">
       <created>1532081607832</created>
@@ -620,18 +610,24 @@
       <option name="project" value="LOCAL" />
       <updated>1533605153330</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="业务逻辑包装异常">
+      <created>1533637237210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533637237210</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74516000" />
+    <option name="totallyTimeSpent" value="74818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946922" sideWeight="0.50208336" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21762209" sideWeight="0.50208336" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19635417" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -648,7 +644,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42993632" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21762209" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21762209" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
