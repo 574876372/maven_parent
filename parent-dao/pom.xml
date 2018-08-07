@@ -16,6 +16,12 @@
     <packaging>jar</packaging>
 
     <dependencies>
+         <!-- 骨架 start -->
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>parent-common</artifactId>
+        </dependency>
+        <!-- 骨架 start -->
 
         <dependency>
             <groupId>org.springframework</groupId>

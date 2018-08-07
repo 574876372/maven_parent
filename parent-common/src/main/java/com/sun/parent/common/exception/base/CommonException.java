@@ -52,4 +52,12 @@ public class CommonException extends Exception implements BasisMI{
         this.code = code;
         this.msg = msg;
     }
+
+    public IErrorCode getErrorCodeObj() {
+        return errorCodeObj;
+    }
+
+    public void setErrorCodeObj(IErrorCode errorCodeObj) {
+        this.errorCodeObj = errorCodeObj;
+    }
 }

@@ -1,5 +1,6 @@
 package com.sun.parent.service.repository;
 
+import com.sun.parent.common.exception.dao.DBException;
 import com.sun.parent.service.repository.bean.Demo;
 
 /**
@@ -15,6 +16,6 @@ public interface DemoService {
      * @param demo
      * @return
      */
-    public Demo selectOne(Demo demo);
+    public Demo selectOne(Demo demo) throws DBException;
 
 }
