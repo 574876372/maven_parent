@@ -37,6 +37,10 @@
     <slf4j.version>1.7.12</slf4j.version>
     <logback.version>1.1.3</logback.version>
     <logback-ext-spring.version>0.1.1</logback-ext-spring.version>
+
+    <swagger-springmvc.version>0.4.0</swagger-springmvc.version>
+    <jackson-module-jaxb-annotations.version>2.4.1</jackson-module-jaxb-annotations.version>
+    <fastjson.version>1.2.8</fastjson.version>
   </properties>
 
   <dependencyManagement>
@@ -120,6 +124,11 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
       <!-- springframework  end -->
 
       <!-- servlet start -->
@@ -257,6 +266,50 @@
         <version>${slf4j.version}</version>
       </dependency>
       <!-- logback end -->
+
+      <!-- swagger  start -->
+      <dependency>
+        <groupId>com.mangofactory</groupId>
+        <artifactId>swagger-springmvc</artifactId>
+        <version>${swagger-springmvc.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-scala</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.module</groupId>
+        <artifactId>jackson-module-jaxb-annotations</artifactId>
+        <version>${jackson-module-jaxb-annotations.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastjson.version}</version>
+      </dependency>
+      <!-- swagger  end -->
 
 
     </dependencies>
