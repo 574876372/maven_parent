@@ -1,11 +1,10 @@
 package com.sun.parent.web.controller;
 
 import com.sun.parent.facade.DemoFacade;
+import com.sun.parent.facade.bean.TestDemoRequest;
+import com.sun.parent.facade.bean.TestDemoResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author:ChenLei
@@ -22,8 +21,7 @@ public class DemoController {
 
     @ResponseBody
     @RequestMapping(value = "/testDemo",method = RequestMethod.GET)
-    public String testDemo(){
-
-        return demoFacade.testDemo();
+    public TestDemoResponse testDemo(@RequestBody TestDemoRequest request){
+        return demoFacade.testDemo(request);
     }
 }

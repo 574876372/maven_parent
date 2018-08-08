@@ -55,7 +55,7 @@ public enum CommonRespCode implements IRespCode {
 
   private String desc;
 
-  private CommonRespCode(String code, String desc) {
+   CommonRespCode(String code, String desc) {
     this.code = code;
     this.desc = desc;
   }
@@ -79,6 +79,10 @@ public enum CommonRespCode implements IRespCode {
   @Override
   public String getRespCode() {
     return this.code;
+  }
+
+  public String getFullRespCode(String appCode) {
+    return appCode + this.code;
   }
 
   @Override

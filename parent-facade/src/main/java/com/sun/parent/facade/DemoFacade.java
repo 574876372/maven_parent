@@ -1,5 +1,8 @@
 package com.sun.parent.facade;
 
+import com.sun.parent.facade.bean.TestDemoRequest;
+import com.sun.parent.facade.bean.TestDemoResponse;
+
 /**
  * @Author:ChenLei
  * @Description: com.sun.parent.facade.DemoFacade.java
@@ -8,5 +11,5 @@ package com.sun.parent.facade;
  */
 public interface DemoFacade {
 
-    public String testDemo();
+    public TestDemoResponse testDemo(TestDemoRequest request);
 }

@@ -16,12 +16,12 @@
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-
-    </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>parent-common</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
