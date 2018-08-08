@@ -1,10 +1,8 @@
 
 # Intellij
 *.iml
-*/target/*
 .idea/*
-*.log
-*/.output/*
+.idea/modules.xml
 parent-biz/target/
 parent-common/target/
 parent-dao/target/

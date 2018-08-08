@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/parent-integration/parent-integration.iml" filepath="$PROJECT_DIR$/parent-integration/parent-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent-service/parent-service.iml" filepath="$PROJECT_DIR$/parent-service/parent-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent-test/parent-test.iml" filepath="$PROJECT_DIR$/parent-test/parent-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent-test/parent-test.iml" filepath="$PROJECT_DIR$/parent-test/parent-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent-web/parent-web.iml" filepath="$PROJECT_DIR$/parent-web/parent-web.iml" />
     </modules>
   </component>
