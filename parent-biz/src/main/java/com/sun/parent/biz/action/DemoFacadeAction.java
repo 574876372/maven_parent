@@ -1,17 +1,20 @@
 package com.sun.parent.biz.action;
 
+import com.sun.parent.biz.action.abs.AbstractAction;
 import com.sun.parent.common.enums.APPCodeEnum;
 import com.sun.parent.common.exception.base.CommonException;
 import com.sun.parent.common.exception.base.CommonRuntimeException;
 import com.sun.parent.common.exception.biz.BizException;
 import com.sun.parent.common.exception.biz.BizExceptionHandler;
-import com.sun.parent.common.exception.dao.DBException;
+import com.sun.parent.common.exception.param.CheckException;
 import com.sun.parent.facade.bean.TestDemoRequest;
 import com.sun.parent.facade.bean.TestDemoResponse;
 import com.sun.parent.service.repository.DemoService;
 import com.sun.parent.service.repository.bean.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.Map;
 
 /**
  * @Author:ChenLei
@@ -20,16 +23,16 @@ import org.springframework.stereotype.Component;
  * To change this template use File | Settings | File Templates.
  */
 @Component("demoFacadeAction")
-public class DemoFacadeAction {
+public class DemoFacadeAction extends AbstractAction<TestDemoResponse,TestDemoRequest> {
 
 
     @Autowired
     private DemoService demoService;
 
-    public TestDemoResponse excute(TestDemoRequest request) throws BizException {
+    public TestDemoResponse testDemo(TestDemoRequest request) throws BizException {
         TestDemoResponse response  = new TestDemoResponse();
         try {
-            response = businessExecute(request);
+            response = excute(request);
         }catch (CommonRuntimeException e) {
             BizExceptionHandler.commonRuntimeExceptionHandle(APPCodeEnum.KPRP_RCDBS, e);
         } catch (CommonException e) {
@@ -38,7 +41,8 @@ public class DemoFacadeAction {
         return response;
     }
 
-    public TestDemoResponse businessExecute(TestDemoRequest request) throws CommonException,CommonRuntimeException{
+    @Override
+    public TestDemoResponse businessExecute(TestDemoRequest request, Map<String, Object> paramMap) throws CommonException {
         TestDemoResponse response = new TestDemoResponse();
         Demo demo = new Demo();
         demo.setId(Long.valueOf(request.getId()));
@@ -48,4 +52,18 @@ public class DemoFacadeAction {
     }
 
 
+    @Override
+    public void after(TestDemoResponse response, TestDemoRequest requset, Map<String, Object> paramMap) throws CommonException {
+
+    }
+
+    @Override
+    public void before(TestDemoRequest request, Map<String, Object> paramMap) throws CommonException {
+
+    }
+
+    @Override
+    public void checkBusRule(TestDemoRequest request, Map<String, Object> checkMap) throws CheckException {
+
+    }
 }

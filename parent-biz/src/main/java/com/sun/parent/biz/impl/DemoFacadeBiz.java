@@ -33,7 +33,7 @@ public class DemoFacadeBiz implements DemoFacade {
         LOGGER.info("DemoFacadeBiz.testDemo start param:[{}]",request);
         TestDemoResponse response = new TestDemoResponse();
         try {
-            response = demoFacadeAction.excute(request);
+            response = demoFacadeAction.testDemo(request);
         }catch (BizException e){
             LOGGER.error("DemoFacadeBiz.testDemo BizException [{}] request=[{}]", e.getMessage(), ToStringBuilder.reflectionToString(request, ToStringStyle.SHORT_PREFIX_STYLE), e);
             response.setCode(e.getCode());

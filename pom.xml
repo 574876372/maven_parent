@@ -41,6 +41,8 @@
     <swagger-springmvc.version>0.4.0</swagger-springmvc.version>
     <jackson-module-jaxb-annotations.version>2.4.1</jackson-module-jaxb-annotations.version>
     <fastjson.version>1.2.8</fastjson.version>
+
+    <javax.validation.version>1.1.0.Final</javax.validation.version>
   </properties>
 
   <dependencyManagement>
@@ -311,6 +313,13 @@
       </dependency>
       <!-- swagger  end -->
 
+      <!-- 校验 start -->
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>${javax.validation.version}</version>
+      </dependency>
+      <!-- 校验 end -->
 
     </dependencies>
   </dependencyManagement>
