@@ -3,8 +3,7 @@ package com.sun.parent.facade.bean;
 import com.sun.parent.facade.bean.abs.AbstractRequest;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-
-import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.NotBlank;
 
 /**
  * @Author:ChenLei
@@ -17,7 +16,7 @@ public class TestDemoRequest extends AbstractRequest {
     private static final long serialVersionUID = -8501965455790678463L;
 
 
-    @NotNull(message = "id 不能为空或NULL")
+    @NotBlank(message = "id 不能为空或NULL")
     private String id;
 
     public String getId() {
