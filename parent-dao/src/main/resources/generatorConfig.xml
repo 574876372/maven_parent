@@ -15,7 +15,7 @@
 		</commentGenerator>
 
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-						connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root" password="mysql" />
+						connectionURL="jdbc:mysql://127.0.0.1:3306/parent" userId="root" password="mysql" />
 
 		<javaModelGenerator targetPackage="com.sun.parent.dao.model" targetProject="src\main\java">
 			<property name="enableSubPackages" value="false"/>
@@ -30,10 +30,19 @@
 			<property name="enableSubPackages" value="false"/>
 		</javaClientGenerator>
 
-		<table schema="" tableName="demo" domainObjectName="DemoDO" enableCountByExample="false" enableUpdateByExample="false"
+		<!--<table schema="" tableName="demo" domainObjectName="DemoDO" enableCountByExample="false" enableUpdateByExample="false"-->
+			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+			   <!--selectByExampleQueryId="false">-->
+		<!--</table>-->
+
+		<table schema="" tableName="t_d_app" domainObjectName="AppDO" enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>
+		<!--<table schema="" tableName="t_d_genres" domainObjectName="GenresDO" enableCountByExample="false" enableUpdateByExample="false"-->
+			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+			   <!--selectByExampleQueryId="false">-->
+		<!--</table>-->
 
 	</context>
 

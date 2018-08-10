@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.parent.dao.mapper.AppDOMapper">
+  <resultMap id="BaseResultMap" type="com.sun.parent.dao.model.AppDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="device" jdbcType="VARCHAR" property="device" />
+    <result column="rank_type" jdbcType="VARCHAR" property="rankType" />
+    <result column="artist_name" jdbcType="VARCHAR" property="artistName" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="release_date" jdbcType="TIMESTAMP" property="releaseDate" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="kind" jdbcType="VARCHAR" property="kind" />
+    <result column="copy_right" jdbcType="VARCHAR" property="copyRight" />
+    <result column="artistId" jdbcType="VARCHAR" property="artistid" />
+    <result column="artist_url" jdbcType="VARCHAR" property="artistUrl" />
+    <result column="artwork_url_100" jdbcType="VARCHAR" property="artworkUrl100" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="genres_id" jdbcType="BIGINT" property="genresId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, device, rank_type, artist_name, app_id, release_date, name, kind, copy_right, 
+    artistId, artist_url, artwork_url_100, url, status, genres_id, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_d_app
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_d_app
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.sun.parent.dao.model.AppDO">
+    insert into t_d_app (id, device, rank_type, 
+      artist_name, app_id, release_date, 
+      name, kind, copy_right, 
+      artistId, artist_url, artwork_url_100, 
+      url, status, genres_id, 
+      create_time, update_time)
+    values (#{id,jdbcType=BIGINT}, #{device,jdbcType=VARCHAR}, #{rankType,jdbcType=VARCHAR}, 
+      #{artistName,jdbcType=VARCHAR}, #{appId,jdbcType=VARCHAR}, #{releaseDate,jdbcType=TIMESTAMP}, 
+      #{name,jdbcType=VARCHAR}, #{kind,jdbcType=VARCHAR}, #{copyRight,jdbcType=VARCHAR}, 
+      #{artistid,jdbcType=VARCHAR}, #{artistUrl,jdbcType=VARCHAR}, #{artworkUrl100,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{genresId,jdbcType=BIGINT}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sun.parent.dao.model.AppDO">
+    insert into t_d_app
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="device != null">
+        device,
+      </if>
+      <if test="rankType != null">
+        rank_type,
+      </if>
+      <if test="artistName != null">
+        artist_name,
+      </if>
+      <if test="appId != null">
+        app_id,
+      </if>
+      <if test="releaseDate != null">
+        release_date,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="kind != null">
+        kind,
+      </if>
+      <if test="copyRight != null">
+        copy_right,
+      </if>
+      <if test="artistid != null">
+        artistId,
+      </if>
+      <if test="artistUrl != null">
+        artist_url,
+      </if>
+      <if test="artworkUrl100 != null">
+        artwork_url_100,
+      </if>
+      <if test="url != null">
+        url,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="genresId != null">
+        genres_id,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="device != null">
+        #{device,jdbcType=VARCHAR},
+      </if>
+      <if test="rankType != null">
+        #{rankType,jdbcType=VARCHAR},
+      </if>
+      <if test="artistName != null">
+        #{artistName,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null">
+        #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDate != null">
+        #{releaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null">
+        #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="copyRight != null">
+        #{copyRight,jdbcType=VARCHAR},
+      </if>
+      <if test="artistid != null">
+        #{artistid,jdbcType=VARCHAR},
+      </if>
+      <if test="artistUrl != null">
+        #{artistUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="artworkUrl100 != null">
+        #{artworkUrl100,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="genresId != null">
+        #{genresId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sun.parent.dao.model.AppDO">
+    update t_d_app
+    <set>
+      <if test="device != null">
+        device = #{device,jdbcType=VARCHAR},
+      </if>
+      <if test="rankType != null">
+        rank_type = #{rankType,jdbcType=VARCHAR},
+      </if>
+      <if test="artistName != null">
+        artist_name = #{artistName,jdbcType=VARCHAR},
+      </if>
+      <if test="appId != null">
+        app_id = #{appId,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDate != null">
+        release_date = #{releaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null">
+        kind = #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="copyRight != null">
+        copy_right = #{copyRight,jdbcType=VARCHAR},
+      </if>
+      <if test="artistid != null">
+        artistId = #{artistid,jdbcType=VARCHAR},
+      </if>
+      <if test="artistUrl != null">
+        artist_url = #{artistUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="artworkUrl100 != null">
+        artwork_url_100 = #{artworkUrl100,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null">
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="genresId != null">
+        genres_id = #{genresId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sun.parent.dao.model.AppDO">
+    update t_d_app
+    set device = #{device,jdbcType=VARCHAR},
+      rank_type = #{rankType,jdbcType=VARCHAR},
+      artist_name = #{artistName,jdbcType=VARCHAR},
+      app_id = #{appId,jdbcType=VARCHAR},
+      release_date = #{releaseDate,jdbcType=TIMESTAMP},
+      name = #{name,jdbcType=VARCHAR},
+      kind = #{kind,jdbcType=VARCHAR},
+      copy_right = #{copyRight,jdbcType=VARCHAR},
+      artistId = #{artistid,jdbcType=VARCHAR},
+      artist_url = #{artistUrl,jdbcType=VARCHAR},
+      artwork_url_100 = #{artworkUrl100,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      genres_id = #{genresId,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
