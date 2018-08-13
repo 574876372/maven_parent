@@ -2,6 +2,7 @@
 # Intellij
 *.iml
 .idea/*
+.idea/workspace.xml
 .idea/modules.xml
 parent-biz/target/
 parent-common/target/

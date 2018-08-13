@@ -26,7 +26,7 @@
 			<property name="enableSubPackages" value="false"/>
 		</sqlMapGenerator>
 
-		<javaClientGenerator targetPackage="com.sun.parent.dao" targetProject="src\main\java" type="XMLMAPPER">
+		<javaClientGenerator targetPackage="com.sun.parent.dao.mapper" targetProject="src\main\java" type="XMLMAPPER">
 			<property name="enableSubPackages" value="false"/>
 		</javaClientGenerator>
 
@@ -34,15 +34,19 @@
 			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
 			   <!--selectByExampleQueryId="false">-->
 		<!--</table>-->
-
+		<table schema="" tableName="t_d_feed" domainObjectName="FeedDO" enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
 		<table schema="" tableName="t_d_app" domainObjectName="AppDO" enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>
-		<!--<table schema="" tableName="t_d_genres" domainObjectName="GenresDO" enableCountByExample="false" enableUpdateByExample="false"-->
-			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-			   <!--selectByExampleQueryId="false">-->
-		<!--</table>-->
+		<table schema="" tableName="t_d_genres" domainObjectName="GenresDO" enableCountByExample="false" enableUpdateByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   selectByExampleQueryId="false">
+		</table>
+
 
 	</context>
 
