@@ -34,15 +34,7 @@
 			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
 			   <!--selectByExampleQueryId="false">-->
 		<!--</table>-->
-		<table schema="" tableName="t_d_feed" domainObjectName="FeedDO" enableCountByExample="false" enableUpdateByExample="false"
-			   enableDeleteByExample="false" enableSelectByExample="false"
-			   selectByExampleQueryId="false">
-		</table>
 		<table schema="" tableName="t_d_app" domainObjectName="AppDO" enableCountByExample="false" enableUpdateByExample="false"
-			   enableDeleteByExample="false" enableSelectByExample="false"
-			   selectByExampleQueryId="false">
-		</table>
-		<table schema="" tableName="t_d_genres" domainObjectName="GenresDO" enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>

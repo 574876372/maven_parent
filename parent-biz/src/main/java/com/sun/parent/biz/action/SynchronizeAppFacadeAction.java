@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.sun.parent.biz.action.abs.AbstractAction;
 import com.sun.parent.common.bean.json.JsonRootBean;
-import com.sun.parent.common.bean.json.Results;
 import com.sun.parent.common.enums.APPCodeEnum;
 import com.sun.parent.common.enums.CommonErrorCode;
 import com.sun.parent.common.enums.CommonLogType;
@@ -19,13 +18,8 @@ import com.sun.parent.common.utils.HttpsUtil;
 import com.sun.parent.facade.bean.SynchronizeAppRequest;
 import com.sun.parent.facade.bean.SynchronizeAppResponse;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.sun.parent.common.bean.json.Feed;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 import java.util.Map;
 
 /**

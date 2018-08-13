@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.parent.dao.mapper.AppDOMapper">
+  <resultMap id="BaseResultMap" type="com.sun.parent.dao.model.AppDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="screen_shot_url_id" jdbcType="BIGINT" property="screenShotUrlId" />
+    <result column="ipad_screen_shot_url_id" jdbcType="BIGINT" property="ipadScreenShotUrlId" />
+    <result column="apple_tv_screen_shot_url_id" jdbcType="BIGINT" property="appleTvScreenShotUrlId" />
+    <result column="art_work_url_512" jdbcType="VARCHAR" property="artWorkUrl512" />
+    <result column="artist_view_url" jdbcType="VARCHAR" property="artistViewUrl" />
+    <result column="art_work_url_60" jdbcType="VARCHAR" property="artWorkUrl60" />
+    <result column="art_work_url_100" jdbcType="VARCHAR" property="artWorkUrl100" />
+    <result column="supported_devices" jdbcType="VARCHAR" property="supportedDevices" />
+    <result column="kind" jdbcType="VARCHAR" property="kind" />
+    <result column="features" jdbcType="VARCHAR" property="features" />
+    <result column="advisories" jdbcType="VARCHAR" property="advisories" />
+    <result column="is_game_center_enabled" jdbcType="BIT" property="isGameCenterEnabled" />
+    <result column="average_user_rating_for_currentVersion" jdbcType="VARCHAR" property="averageUserRatingForCurrentversion" />
+    <result column="language_codes_ISO2A" jdbcType="VARCHAR" property="languageCodesIso2a" />
+    <result column="file_size_bytes" jdbcType="VARCHAR" property="fileSizeBytes" />
+    <result column="user_rating_count_for_current_version" jdbcType="VARCHAR" property="userRatingCountForCurrentVersion" />
+    <result column="track_content_rating" jdbcType="VARCHAR" property="trackContentRating" />
+    <result column="content_advisory_rating" jdbcType="VARCHAR" property="contentAdvisoryRating" />
+    <result column="track_view_url" jdbcType="VARCHAR" property="trackViewUrl" />
+    <result column="track_censored_name" jdbcType="VARCHAR" property="trackCensoredName" />
+    <result column="is_vpp_device_based_licensing_enabled" jdbcType="VARCHAR" property="isVppDeviceBasedLicensingEnabled" />
+    <result column="seller_name" jdbcType="VARCHAR" property="sellerName" />
+    <result column="release_date" jdbcType="TIMESTAMP" property="releaseDate" />
+    <result column="track_id" jdbcType="VARCHAR" property="trackId" />
+    <result column="track_name" jdbcType="VARCHAR" property="trackName" />
+    <result column="primary_genre_name" jdbcType="VARCHAR" property="primaryGenreName" />
+    <result column="primary_genre_id" jdbcType="VARCHAR" property="primaryGenreId" />
+    <result column="currency" jdbcType="VARCHAR" property="currency" />
+    <result column="wrapper_type" jdbcType="VARCHAR" property="wrapperType" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="artist_id" jdbcType="VARCHAR" property="artistId" />
+    <result column="artist_name" jdbcType="VARCHAR" property="artistName" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="bundle_id" jdbcType="VARCHAR" property="bundleId" />
+    <result column="release_notes" jdbcType="VARCHAR" property="releaseNotes" />
+    <result column="current_version_release_date" jdbcType="TIMESTAMP" property="currentVersionReleaseDate" />
+    <result column="minimum_os_version" jdbcType="VARCHAR" property="minimumOsVersion" />
+    <result column="formatted_price" jdbcType="VARCHAR" property="formattedPrice" />
+    <result column="average_user_rating" jdbcType="VARCHAR" property="averageUserRating" />
+    <result column="user_rating_count" jdbcType="VARCHAR" property="userRatingCount" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.sun.parent.dao.model.AppDO">
+    <result column="description" jdbcType="LONGVARCHAR" property="description" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, screen_shot_url_id, ipad_screen_shot_url_id, apple_tv_screen_shot_url_id, art_work_url_512, 
+    artist_view_url, art_work_url_60, art_work_url_100, supported_devices, kind, features, 
+    advisories, is_game_center_enabled, average_user_rating_for_currentVersion, language_codes_ISO2A, 
+    file_size_bytes, user_rating_count_for_current_version, track_content_rating, content_advisory_rating, 
+    track_view_url, track_censored_name, is_vpp_device_based_licensing_enabled, seller_name, 
+    release_date, track_id, track_name, primary_genre_name, primary_genre_id, currency, 
+    wrapper_type, version, artist_id, artist_name, price, bundle_id, release_notes, current_version_release_date, 
+    minimum_os_version, formatted_price, average_user_rating, user_rating_count, create_time, 
+    update_time
+  </sql>
+  <sql id="Blob_Column_List">
+    description
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from t_d_app
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_d_app
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.sun.parent.dao.model.AppDO">
+    insert into t_d_app (id, screen_shot_url_id, ipad_screen_shot_url_id, 
+      apple_tv_screen_shot_url_id, art_work_url_512, artist_view_url, 
+      art_work_url_60, art_work_url_100, supported_devices, 
+      kind, features, advisories, 
+      is_game_center_enabled, average_user_rating_for_currentVersion, 
+      language_codes_ISO2A, file_size_bytes, user_rating_count_for_current_version, 
+      track_content_rating, content_advisory_rating, 
+      track_view_url, track_censored_name, is_vpp_device_based_licensing_enabled, 
+      seller_name, release_date, track_id, 
+      track_name, primary_genre_name, primary_genre_id, 
+      currency, wrapper_type, version, 
+      artist_id, artist_name, price, 
+      bundle_id, release_notes, current_version_release_date, 
+      minimum_os_version, formatted_price, average_user_rating, 
+      user_rating_count, create_time, update_time, 
+      description)
+    values (#{id,jdbcType=BIGINT}, #{screenShotUrlId,jdbcType=BIGINT}, #{ipadScreenShotUrlId,jdbcType=BIGINT}, 
+      #{appleTvScreenShotUrlId,jdbcType=BIGINT}, #{artWorkUrl512,jdbcType=VARCHAR}, #{artistViewUrl,jdbcType=VARCHAR}, 
+      #{artWorkUrl60,jdbcType=VARCHAR}, #{artWorkUrl100,jdbcType=VARCHAR}, #{supportedDevices,jdbcType=VARCHAR}, 
+      #{kind,jdbcType=VARCHAR}, #{features,jdbcType=VARCHAR}, #{advisories,jdbcType=VARCHAR}, 
+      #{isGameCenterEnabled,jdbcType=BIT}, #{averageUserRatingForCurrentversion,jdbcType=VARCHAR}, 
+      #{languageCodesIso2a,jdbcType=VARCHAR}, #{fileSizeBytes,jdbcType=VARCHAR}, #{userRatingCountForCurrentVersion,jdbcType=VARCHAR}, 
+      #{trackContentRating,jdbcType=VARCHAR}, #{contentAdvisoryRating,jdbcType=VARCHAR}, 
+      #{trackViewUrl,jdbcType=VARCHAR}, #{trackCensoredName,jdbcType=VARCHAR}, #{isVppDeviceBasedLicensingEnabled,jdbcType=VARCHAR}, 
+      #{sellerName,jdbcType=VARCHAR}, #{releaseDate,jdbcType=TIMESTAMP}, #{trackId,jdbcType=VARCHAR}, 
+      #{trackName,jdbcType=VARCHAR}, #{primaryGenreName,jdbcType=VARCHAR}, #{primaryGenreId,jdbcType=VARCHAR}, 
+      #{currency,jdbcType=VARCHAR}, #{wrapperType,jdbcType=VARCHAR}, #{version,jdbcType=VARCHAR}, 
+      #{artistId,jdbcType=VARCHAR}, #{artistName,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
+      #{bundleId,jdbcType=VARCHAR}, #{releaseNotes,jdbcType=VARCHAR}, #{currentVersionReleaseDate,jdbcType=TIMESTAMP}, 
+      #{minimumOsVersion,jdbcType=VARCHAR}, #{formattedPrice,jdbcType=VARCHAR}, #{averageUserRating,jdbcType=VARCHAR}, 
+      #{userRatingCount,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, 
+      #{description,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sun.parent.dao.model.AppDO">
+    insert into t_d_app
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="screenShotUrlId != null">
+        screen_shot_url_id,
+      </if>
+      <if test="ipadScreenShotUrlId != null">
+        ipad_screen_shot_url_id,
+      </if>
+      <if test="appleTvScreenShotUrlId != null">
+        apple_tv_screen_shot_url_id,
+      </if>
+      <if test="artWorkUrl512 != null">
+        art_work_url_512,
+      </if>
+      <if test="artistViewUrl != null">
+        artist_view_url,
+      </if>
+      <if test="artWorkUrl60 != null">
+        art_work_url_60,
+      </if>
+      <if test="artWorkUrl100 != null">
+        art_work_url_100,
+      </if>
+      <if test="supportedDevices != null">
+        supported_devices,
+      </if>
+      <if test="kind != null">
+        kind,
+      </if>
+      <if test="features != null">
+        features,
+      </if>
+      <if test="advisories != null">
+        advisories,
+      </if>
+      <if test="isGameCenterEnabled != null">
+        is_game_center_enabled,
+      </if>
+      <if test="averageUserRatingForCurrentversion != null">
+        average_user_rating_for_currentVersion,
+      </if>
+      <if test="languageCodesIso2a != null">
+        language_codes_ISO2A,
+      </if>
+      <if test="fileSizeBytes != null">
+        file_size_bytes,
+      </if>
+      <if test="userRatingCountForCurrentVersion != null">
+        user_rating_count_for_current_version,
+      </if>
+      <if test="trackContentRating != null">
+        track_content_rating,
+      </if>
+      <if test="contentAdvisoryRating != null">
+        content_advisory_rating,
+      </if>
+      <if test="trackViewUrl != null">
+        track_view_url,
+      </if>
+      <if test="trackCensoredName != null">
+        track_censored_name,
+      </if>
+      <if test="isVppDeviceBasedLicensingEnabled != null">
+        is_vpp_device_based_licensing_enabled,
+      </if>
+      <if test="sellerName != null">
+        seller_name,
+      </if>
+      <if test="releaseDate != null">
+        release_date,
+      </if>
+      <if test="trackId != null">
+        track_id,
+      </if>
+      <if test="trackName != null">
+        track_name,
+      </if>
+      <if test="primaryGenreName != null">
+        primary_genre_name,
+      </if>
+      <if test="primaryGenreId != null">
+        primary_genre_id,
+      </if>
+      <if test="currency != null">
+        currency,
+      </if>
+      <if test="wrapperType != null">
+        wrapper_type,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+      <if test="artistId != null">
+        artist_id,
+      </if>
+      <if test="artistName != null">
+        artist_name,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="bundleId != null">
+        bundle_id,
+      </if>
+      <if test="releaseNotes != null">
+        release_notes,
+      </if>
+      <if test="currentVersionReleaseDate != null">
+        current_version_release_date,
+      </if>
+      <if test="minimumOsVersion != null">
+        minimum_os_version,
+      </if>
+      <if test="formattedPrice != null">
+        formatted_price,
+      </if>
+      <if test="averageUserRating != null">
+        average_user_rating,
+      </if>
+      <if test="userRatingCount != null">
+        user_rating_count,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="screenShotUrlId != null">
+        #{screenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="ipadScreenShotUrlId != null">
+        #{ipadScreenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="appleTvScreenShotUrlId != null">
+        #{appleTvScreenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="artWorkUrl512 != null">
+        #{artWorkUrl512,jdbcType=VARCHAR},
+      </if>
+      <if test="artistViewUrl != null">
+        #{artistViewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="artWorkUrl60 != null">
+        #{artWorkUrl60,jdbcType=VARCHAR},
+      </if>
+      <if test="artWorkUrl100 != null">
+        #{artWorkUrl100,jdbcType=VARCHAR},
+      </if>
+      <if test="supportedDevices != null">
+        #{supportedDevices,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null">
+        #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="features != null">
+        #{features,jdbcType=VARCHAR},
+      </if>
+      <if test="advisories != null">
+        #{advisories,jdbcType=VARCHAR},
+      </if>
+      <if test="isGameCenterEnabled != null">
+        #{isGameCenterEnabled,jdbcType=BIT},
+      </if>
+      <if test="averageUserRatingForCurrentversion != null">
+        #{averageUserRatingForCurrentversion,jdbcType=VARCHAR},
+      </if>
+      <if test="languageCodesIso2a != null">
+        #{languageCodesIso2a,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSizeBytes != null">
+        #{fileSizeBytes,jdbcType=VARCHAR},
+      </if>
+      <if test="userRatingCountForCurrentVersion != null">
+        #{userRatingCountForCurrentVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="trackContentRating != null">
+        #{trackContentRating,jdbcType=VARCHAR},
+      </if>
+      <if test="contentAdvisoryRating != null">
+        #{contentAdvisoryRating,jdbcType=VARCHAR},
+      </if>
+      <if test="trackViewUrl != null">
+        #{trackViewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="trackCensoredName != null">
+        #{trackCensoredName,jdbcType=VARCHAR},
+      </if>
+      <if test="isVppDeviceBasedLicensingEnabled != null">
+        #{isVppDeviceBasedLicensingEnabled,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerName != null">
+        #{sellerName,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDate != null">
+        #{releaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="trackId != null">
+        #{trackId,jdbcType=VARCHAR},
+      </if>
+      <if test="trackName != null">
+        #{trackName,jdbcType=VARCHAR},
+      </if>
+      <if test="primaryGenreName != null">
+        #{primaryGenreName,jdbcType=VARCHAR},
+      </if>
+      <if test="primaryGenreId != null">
+        #{primaryGenreId,jdbcType=VARCHAR},
+      </if>
+      <if test="currency != null">
+        #{currency,jdbcType=VARCHAR},
+      </if>
+      <if test="wrapperType != null">
+        #{wrapperType,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="artistId != null">
+        #{artistId,jdbcType=VARCHAR},
+      </if>
+      <if test="artistName != null">
+        #{artistName,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="bundleId != null">
+        #{bundleId,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseNotes != null">
+        #{releaseNotes,jdbcType=VARCHAR},
+      </if>
+      <if test="currentVersionReleaseDate != null">
+        #{currentVersionReleaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="minimumOsVersion != null">
+        #{minimumOsVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="formattedPrice != null">
+        #{formattedPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="averageUserRating != null">
+        #{averageUserRating,jdbcType=VARCHAR},
+      </if>
+      <if test="userRatingCount != null">
+        #{userRatingCount,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sun.parent.dao.model.AppDO">
+    update t_d_app
+    <set>
+      <if test="screenShotUrlId != null">
+        screen_shot_url_id = #{screenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="ipadScreenShotUrlId != null">
+        ipad_screen_shot_url_id = #{ipadScreenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="appleTvScreenShotUrlId != null">
+        apple_tv_screen_shot_url_id = #{appleTvScreenShotUrlId,jdbcType=BIGINT},
+      </if>
+      <if test="artWorkUrl512 != null">
+        art_work_url_512 = #{artWorkUrl512,jdbcType=VARCHAR},
+      </if>
+      <if test="artistViewUrl != null">
+        artist_view_url = #{artistViewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="artWorkUrl60 != null">
+        art_work_url_60 = #{artWorkUrl60,jdbcType=VARCHAR},
+      </if>
+      <if test="artWorkUrl100 != null">
+        art_work_url_100 = #{artWorkUrl100,jdbcType=VARCHAR},
+      </if>
+      <if test="supportedDevices != null">
+        supported_devices = #{supportedDevices,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null">
+        kind = #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="features != null">
+        features = #{features,jdbcType=VARCHAR},
+      </if>
+      <if test="advisories != null">
+        advisories = #{advisories,jdbcType=VARCHAR},
+      </if>
+      <if test="isGameCenterEnabled != null">
+        is_game_center_enabled = #{isGameCenterEnabled,jdbcType=BIT},
+      </if>
+      <if test="averageUserRatingForCurrentversion != null">
+        average_user_rating_for_currentVersion = #{averageUserRatingForCurrentversion,jdbcType=VARCHAR},
+      </if>
+      <if test="languageCodesIso2a != null">
+        language_codes_ISO2A = #{languageCodesIso2a,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSizeBytes != null">
+        file_size_bytes = #{fileSizeBytes,jdbcType=VARCHAR},
+      </if>
+      <if test="userRatingCountForCurrentVersion != null">
+        user_rating_count_for_current_version = #{userRatingCountForCurrentVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="trackContentRating != null">
+        track_content_rating = #{trackContentRating,jdbcType=VARCHAR},
+      </if>
+      <if test="contentAdvisoryRating != null">
+        content_advisory_rating = #{contentAdvisoryRating,jdbcType=VARCHAR},
+      </if>
+      <if test="trackViewUrl != null">
+        track_view_url = #{trackViewUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="trackCensoredName != null">
+        track_censored_name = #{trackCensoredName,jdbcType=VARCHAR},
+      </if>
+      <if test="isVppDeviceBasedLicensingEnabled != null">
+        is_vpp_device_based_licensing_enabled = #{isVppDeviceBasedLicensingEnabled,jdbcType=VARCHAR},
+      </if>
+      <if test="sellerName != null">
+        seller_name = #{sellerName,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseDate != null">
+        release_date = #{releaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="trackId != null">
+        track_id = #{trackId,jdbcType=VARCHAR},
+      </if>
+      <if test="trackName != null">
+        track_name = #{trackName,jdbcType=VARCHAR},
+      </if>
+      <if test="primaryGenreName != null">
+        primary_genre_name = #{primaryGenreName,jdbcType=VARCHAR},
+      </if>
+      <if test="primaryGenreId != null">
+        primary_genre_id = #{primaryGenreId,jdbcType=VARCHAR},
+      </if>
+      <if test="currency != null">
+        currency = #{currency,jdbcType=VARCHAR},
+      </if>
+      <if test="wrapperType != null">
+        wrapper_type = #{wrapperType,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="artistId != null">
+        artist_id = #{artistId,jdbcType=VARCHAR},
+      </if>
+      <if test="artistName != null">
+        artist_name = #{artistName,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="bundleId != null">
+        bundle_id = #{bundleId,jdbcType=VARCHAR},
+      </if>
+      <if test="releaseNotes != null">
+        release_notes = #{releaseNotes,jdbcType=VARCHAR},
+      </if>
+      <if test="currentVersionReleaseDate != null">
+        current_version_release_date = #{currentVersionReleaseDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="minimumOsVersion != null">
+        minimum_os_version = #{minimumOsVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="formattedPrice != null">
+        formatted_price = #{formattedPrice,jdbcType=VARCHAR},
+      </if>
+      <if test="averageUserRating != null">
+        average_user_rating = #{averageUserRating,jdbcType=VARCHAR},
+      </if>
+      <if test="userRatingCount != null">
+        user_rating_count = #{userRatingCount,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.sun.parent.dao.model.AppDO">
+    update t_d_app
+    set screen_shot_url_id = #{screenShotUrlId,jdbcType=BIGINT},
+      ipad_screen_shot_url_id = #{ipadScreenShotUrlId,jdbcType=BIGINT},
+      apple_tv_screen_shot_url_id = #{appleTvScreenShotUrlId,jdbcType=BIGINT},
+      art_work_url_512 = #{artWorkUrl512,jdbcType=VARCHAR},
+      artist_view_url = #{artistViewUrl,jdbcType=VARCHAR},
+      art_work_url_60 = #{artWorkUrl60,jdbcType=VARCHAR},
+      art_work_url_100 = #{artWorkUrl100,jdbcType=VARCHAR},
+      supported_devices = #{supportedDevices,jdbcType=VARCHAR},
+      kind = #{kind,jdbcType=VARCHAR},
+      features = #{features,jdbcType=VARCHAR},
+      advisories = #{advisories,jdbcType=VARCHAR},
+      is_game_center_enabled = #{isGameCenterEnabled,jdbcType=BIT},
+      average_user_rating_for_currentVersion = #{averageUserRatingForCurrentversion,jdbcType=VARCHAR},
+      language_codes_ISO2A = #{languageCodesIso2a,jdbcType=VARCHAR},
+      file_size_bytes = #{fileSizeBytes,jdbcType=VARCHAR},
+      user_rating_count_for_current_version = #{userRatingCountForCurrentVersion,jdbcType=VARCHAR},
+      track_content_rating = #{trackContentRating,jdbcType=VARCHAR},
+      content_advisory_rating = #{contentAdvisoryRating,jdbcType=VARCHAR},
+      track_view_url = #{trackViewUrl,jdbcType=VARCHAR},
+      track_censored_name = #{trackCensoredName,jdbcType=VARCHAR},
+      is_vpp_device_based_licensing_enabled = #{isVppDeviceBasedLicensingEnabled,jdbcType=VARCHAR},
+      seller_name = #{sellerName,jdbcType=VARCHAR},
+      release_date = #{releaseDate,jdbcType=TIMESTAMP},
+      track_id = #{trackId,jdbcType=VARCHAR},
+      track_name = #{trackName,jdbcType=VARCHAR},
+      primary_genre_name = #{primaryGenreName,jdbcType=VARCHAR},
+      primary_genre_id = #{primaryGenreId,jdbcType=VARCHAR},
+      currency = #{currency,jdbcType=VARCHAR},
+      wrapper_type = #{wrapperType,jdbcType=VARCHAR},
+      version = #{version,jdbcType=VARCHAR},
+      artist_id = #{artistId,jdbcType=VARCHAR},
+      artist_name = #{artistName,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      bundle_id = #{bundleId,jdbcType=VARCHAR},
+      release_notes = #{releaseNotes,jdbcType=VARCHAR},
+      current_version_release_date = #{currentVersionReleaseDate,jdbcType=TIMESTAMP},
+      minimum_os_version = #{minimumOsVersion,jdbcType=VARCHAR},
+      formatted_price = #{formattedPrice,jdbcType=VARCHAR},
+      average_user_rating = #{averageUserRating,jdbcType=VARCHAR},
+      user_rating_count = #{userRatingCount,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      description = #{description,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sun.parent.dao.model.AppDO">
+    update t_d_app
+    set screen_shot_url_id = #{screenShotUrlId,jdbcType=BIGINT},
+      ipad_screen_shot_url_id = #{ipadScreenShotUrlId,jdbcType=BIGINT},
+      apple_tv_screen_shot_url_id = #{appleTvScreenShotUrlId,jdbcType=BIGINT},
+      art_work_url_512 = #{artWorkUrl512,jdbcType=VARCHAR},
+      artist_view_url = #{artistViewUrl,jdbcType=VARCHAR},
+      art_work_url_60 = #{artWorkUrl60,jdbcType=VARCHAR},
+      art_work_url_100 = #{artWorkUrl100,jdbcType=VARCHAR},
+      supported_devices = #{supportedDevices,jdbcType=VARCHAR},
+      kind = #{kind,jdbcType=VARCHAR},
+      features = #{features,jdbcType=VARCHAR},
+      advisories = #{advisories,jdbcType=VARCHAR},
+      is_game_center_enabled = #{isGameCenterEnabled,jdbcType=BIT},
+      average_user_rating_for_currentVersion = #{averageUserRatingForCurrentversion,jdbcType=VARCHAR},
+      language_codes_ISO2A = #{languageCodesIso2a,jdbcType=VARCHAR},
+      file_size_bytes = #{fileSizeBytes,jdbcType=VARCHAR},
+      user_rating_count_for_current_version = #{userRatingCountForCurrentVersion,jdbcType=VARCHAR},
+      track_content_rating = #{trackContentRating,jdbcType=VARCHAR},
+      content_advisory_rating = #{contentAdvisoryRating,jdbcType=VARCHAR},
+      track_view_url = #{trackViewUrl,jdbcType=VARCHAR},
+      track_censored_name = #{trackCensoredName,jdbcType=VARCHAR},
+      is_vpp_device_based_licensing_enabled = #{isVppDeviceBasedLicensingEnabled,jdbcType=VARCHAR},
+      seller_name = #{sellerName,jdbcType=VARCHAR},
+      release_date = #{releaseDate,jdbcType=TIMESTAMP},
+      track_id = #{trackId,jdbcType=VARCHAR},
+      track_name = #{trackName,jdbcType=VARCHAR},
+      primary_genre_name = #{primaryGenreName,jdbcType=VARCHAR},
+      primary_genre_id = #{primaryGenreId,jdbcType=VARCHAR},
+      currency = #{currency,jdbcType=VARCHAR},
+      wrapper_type = #{wrapperType,jdbcType=VARCHAR},
+      version = #{version,jdbcType=VARCHAR},
+      artist_id = #{artistId,jdbcType=VARCHAR},
+      artist_name = #{artistName,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      bundle_id = #{bundleId,jdbcType=VARCHAR},
+      release_notes = #{releaseNotes,jdbcType=VARCHAR},
+      current_version_release_date = #{currentVersionReleaseDate,jdbcType=TIMESTAMP},
+      minimum_os_version = #{minimumOsVersion,jdbcType=VARCHAR},
+      formatted_price = #{formattedPrice,jdbcType=VARCHAR},
+      average_user_rating = #{averageUserRating,jdbcType=VARCHAR},
+      user_rating_count = #{userRatingCount,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
