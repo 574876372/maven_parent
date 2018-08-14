@@ -20,8 +20,8 @@
             <list>
                 <!--外置文件-->
                 <!--<value>file:/data/xinyan/gateway-entry/app.properties</value>-->
-                <!--<value>file:/data/xinyan/gateway-entry/db.properties</value>-->
-                <value>classpath*:configs/spring/db.properties</value>
+                <value>file://opt/configs/parent/db.properties</value>
+                <!--<value>classpath*:configs/spring/db.properties</value>-->
             </list>
         </property>
     </bean>
