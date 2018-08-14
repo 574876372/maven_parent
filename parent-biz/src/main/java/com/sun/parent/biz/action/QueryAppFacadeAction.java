@@ -87,10 +87,6 @@ public class QueryAppFacadeAction extends AbstractAction<QueryAppResponse,QueryA
 
     @Override
     public void before(QueryAppRequest request, Map<String, Object> paramMap) throws CommonException {
-        if(StringUtils.isBlank(request.getStartTime()) || StringUtils.isBlank(request.getEndTime())){
-            LOGGER.info("请求参数有误：[{}]",request);
-            throw new BizException(CommonErrorCode.COMMON_001);
-        }
 
     }
 

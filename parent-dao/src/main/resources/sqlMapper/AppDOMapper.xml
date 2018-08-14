@@ -650,6 +650,16 @@
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
-    from t_d_app  where <![CDATA[ create_time >= #{start,jdbcType=TIMESTAMP} and create_time <= #{end,jdbcType=TIMESTAMP} ]]>  order by create_time desc
+    from t_d_app  where 1=1
+    <choose>
+      <when test="start ==null || end==null ">
+        order by create_time desc
+      </when>
+      <otherwise>
+        and  <![CDATA[  create_time >= #{start,jdbcType=TIMESTAMP} and create_time <= #{end,jdbcType=TIMESTAMP} ]]>  order by create_time desc
+      </otherwise>
+    </choose>
+
+
   </select>
 </mapper>

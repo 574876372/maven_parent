@@ -2,6 +2,7 @@ package com.sun.parent.common.utils;
 
 import com.sun.parent.common.enums.CommonErrorCode;
 import com.sun.parent.common.exception.biz.BizException;
+import org.apache.commons.lang3.StringUtils;
 
 import java.text.*;
 import java.util.ArrayList;
@@ -16,6 +17,9 @@ public class VeDate {
     public static Date StringToDate(String stirngDate) throws BizException{
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = null;
+        if(StringUtils.isBlank(stirngDate)){
+            return null;
+        }
         try {
              date = sdf.parse(stirngDate);
         } catch (ParseException e) {
