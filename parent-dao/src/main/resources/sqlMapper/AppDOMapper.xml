@@ -650,6 +650,6 @@
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
-    from t_d_app  where <![CDATA[ create_time >= #{start,jdbcType=TIMESTAMP} and create_time <= #{end,jdbcType=TIMESTAMP} ]]>
+    from t_d_app  where <![CDATA[ create_time >= #{start,jdbcType=TIMESTAMP} and create_time <= #{end,jdbcType=TIMESTAMP} ]]>  order by create_time desc
   </select>
 </mapper>
