@@ -20,4 +20,6 @@ public interface DemoDOMapper {
     int updateByPrimaryKey(DemoDO record);
 
     DemoDO selectOne(DemoDO demoDo);
+
+
 }

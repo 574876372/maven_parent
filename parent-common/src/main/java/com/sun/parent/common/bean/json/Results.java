@@ -42,7 +42,7 @@ public class Results {
     private int primaryGenreId;
     private String currency;
     private String wrapperType;
-    private Date version;
+    private String version;
     private long artistId;
     private String artistName;
     private List<String> genres;
@@ -259,12 +259,6 @@ public class Results {
          return wrapperType;
      }
 
-    public void setVersion(Date version) {
-         this.version = version;
-     }
-     public Date getVersion() {
-         return version;
-     }
 
     public void setArtistId(long artistId) {
          this.artistId = artistId;
@@ -357,4 +351,27 @@ public class Results {
          return userRatingCount;
      }
 
+    public boolean isGameCenterEnabled() {
+        return isGameCenterEnabled;
+    }
+
+    public void setGameCenterEnabled(boolean gameCenterEnabled) {
+        isGameCenterEnabled = gameCenterEnabled;
+    }
+
+    public boolean isVppDeviceBasedLicensingEnabled() {
+        return isVppDeviceBasedLicensingEnabled;
+    }
+
+    public void setVppDeviceBasedLicensingEnabled(boolean vppDeviceBasedLicensingEnabled) {
+        isVppDeviceBasedLicensingEnabled = vppDeviceBasedLicensingEnabled;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
 }

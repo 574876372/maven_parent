@@ -1,7 +1,13 @@
 package com.sun.parent.service.bussiness.impl;
 
 import com.sun.parent.service.bussiness.AppBusService;
+import com.sun.parent.service.repository.AppService;
+import com.sun.parent.service.repository.bean.App;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * @Author:ChenLei
@@ -12,4 +18,16 @@ import org.springframework.stereotype.Service;
 @Service("appBusService")
 public class AppBusServiceImpl implements AppBusService {
 
+    @Autowired
+    private AppService appService;
+
+    @Override
+    public Long insertReturnKey(App app) {
+        return appService.insertReturnKey(app);
+    }
+
+    @Override
+    public List<App> selectByTime(Date start, Date end) {
+        return appService.selectByTime(start,end);
+    }
 }

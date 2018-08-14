@@ -34,7 +34,12 @@
 			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
 			   <!--selectByExampleQueryId="false">-->
 		<!--</table>-->
-		<table schema="" tableName="t_d_app" domainObjectName="AppDO" enableCountByExample="false" enableUpdateByExample="false"
+		<!--<table schema="" tableName="t_d_app" domainObjectName="AppDO" enableCountByExample="false" enableUpdateByExample="false"-->
+			   <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+			   <!--selectByExampleQueryId="false">-->
+		<!--</table>-->
+
+		<table schema="" tableName="t_d_picture_url" domainObjectName="PictureUrlDO" enableCountByExample="false" enableUpdateByExample="false"
 			   enableDeleteByExample="false" enableSelectByExample="false"
 			   selectByExampleQueryId="false">
 		</table>
