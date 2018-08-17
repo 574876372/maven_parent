@@ -23,7 +23,7 @@ public class DemoController {
 
     @ResponseBody
     @RequestMapping(value = "/testDemo",method = RequestMethod.POST,consumes = {"application/json;charset=UTF-8"})
-    public TestDemoResponse testDemo(@RequestBody @Valid TestDemoRequest request){
+    public TestDemoResponse testDemo(@RequestBody TestDemoRequest request){
         return demoFacade.testDemo(request);
     }
 
