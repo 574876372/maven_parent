@@ -54,7 +54,7 @@ public class SynchronizeAppFacadeAction  extends AbstractAction<SynchronizeAppRe
     public SynchronizeAppResponse sysApp(SynchronizeAppRequest request) throws BizException {
         SynchronizeAppResponse response  = new SynchronizeAppResponse();
         try {
-            response = excute(request);
+            response = excute(request,null,null);
         }catch (CommonRuntimeException e) {
             BizExceptionHandler.commonRuntimeExceptionHandle(APPCodeEnum.KPRP_RCDBS, e);
         } catch (CommonException e) {

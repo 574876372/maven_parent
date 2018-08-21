@@ -29,6 +29,8 @@ public enum CommonRespCode implements IRespCode {
   RESP_100("100", "无访问权限"), //
   /** 有重复请求数据 */
   RESP_101("101", "有重复请求数据"), //
+
+  RESP_102("102", "资源竞争"), //
   /**
    * database code 200-299
    */

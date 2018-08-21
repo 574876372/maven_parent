@@ -26,7 +26,7 @@ public abstract class AbstractAction<T extends AbstractResponse,V extends Abstra
      * @return
      * @throws CommonException
      */
-    public T excute(V request)throws CommonException {
+    public T excute(V request,String businessType, String businessId)throws CommonException {
         Map<String, Object> paramMap = new HashMap<String, Object>();
         // 接口开始
         before(request, paramMap);

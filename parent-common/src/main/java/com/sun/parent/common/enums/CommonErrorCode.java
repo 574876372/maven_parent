@@ -35,7 +35,9 @@ public enum CommonErrorCode implements IErrorCode {
 
     /** 无访问权限 */
     COMMON_100("100", "无访问权限", CommonRespCode.RESP_100), //
-
+    /** 加锁失败 **/
+    COMMON_101("101", "加锁失败", CommonRespCode.RESP_102),
+    COMMON_102("102", "业务锁类型不存在", CommonRespCode.RESP_400),
     /**
      * database code 200-299
      */

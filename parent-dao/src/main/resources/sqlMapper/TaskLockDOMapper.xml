@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sun.parent.dao.mapper.TaskLockDOMapper">
+  <resultMap id="BaseResultMap" type="com.sun.parent.dao.model.TaskLockDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="business_type" jdbcType="VARCHAR" property="businessType" />
+    <result column="business_id" jdbcType="VARCHAR" property="businessId" />
+    <result column="task_status" jdbcType="INTEGER" property="taskStatus" />
+    <result column="is_finished" jdbcType="INTEGER" property="isFinished" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, business_type, business_id, task_status, is_finished, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_d_task_lock
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <insert id="insert" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    insert into t_d_task_lock (id, business_type, business_id, 
+      task_status, is_finished, create_time, 
+      update_time)
+    values (#{id,jdbcType=BIGINT}, #{businessType,jdbcType=VARCHAR}, #{businessId,jdbcType=VARCHAR}, 
+      #{taskStatus,jdbcType=INTEGER}, #{isFinished,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    insert into t_d_task_lock
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="businessType != null">
+        business_type,
+      </if>
+      <if test="businessId != null">
+        business_id,
+      </if>
+      <if test="taskStatus != null">
+        task_status,
+      </if>
+      <if test="isFinished != null">
+        is_finished,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="businessType != null">
+        #{businessType,jdbcType=VARCHAR},
+      </if>
+      <if test="businessId != null">
+        #{businessId,jdbcType=VARCHAR},
+      </if>
+      <if test="taskStatus != null">
+        #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isFinished != null">
+        #{isFinished,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    update t_d_task_lock
+    <set>
+      <if test="businessType != null">
+        business_type = #{businessType,jdbcType=VARCHAR},
+      </if>
+      <if test="businessId != null">
+        business_id = #{businessId,jdbcType=VARCHAR},
+      </if>
+      <if test="taskStatus != null">
+        task_status = #{taskStatus,jdbcType=INTEGER},
+      </if>
+      <if test="isFinished != null">
+        is_finished = #{isFinished,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    update t_d_task_lock
+    set business_type = #{businessType,jdbcType=VARCHAR},
+      business_id = #{businessId,jdbcType=VARCHAR},
+      task_status = #{taskStatus,jdbcType=INTEGER},
+      is_finished = #{isFinished,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <update id="isExistsByTypeAndId" parameterType="java.lang.String">
+    UPDATE
+		t_d_task_lock
+		SET update_time = now()
+		WHERE business_type = #{businessType,jdbcType=VARCHAR}
+		AND business_id = #{businessId,jdbcType=VARCHAR}
+  </update>
+
+  <insert id="insertData" parameterType="com.sun.parent.dao.model.TaskLockDO">
+ insert into t_d_task_lock ( business_type, business_id,
+      task_status, is_finished, create_time,
+      update_time)
+    values (#{businessType,jdbcType=VARCHAR}, #{businessId,jdbcType=VARCHAR},
+      #{taskStatus,jdbcType=INTEGER}, #{isFinished,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP},
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+
+  <update id="updateLock" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    UPDATE t_d_task_lock
+    SET
+    task_status = 1,
+    update_time = #{updateTime,jdbcType=TIMESTAMP}
+    WHERE business_type =
+    #{businessType,jdbcType=VARCHAR}
+    AND business_id = #{businessId,jdbcType=VARCHAR}
+    AND task_status = 0
+  </update>
+
+  <update id="updateUnLock" parameterType="com.sun.parent.dao.model.TaskLockDO">
+    UPDATE t_d_task_lock
+    SET task_status = 0,
+    update_time = #{updateTime,jdbcType=TIMESTAMP}
+    WHERE business_type =
+    #{businessType,jdbcType=VARCHAR}
+    AND business_id = #{businessId,jdbcType=VARCHAR}
+    AND task_status = 1
+  </update>
+
+</mapper>

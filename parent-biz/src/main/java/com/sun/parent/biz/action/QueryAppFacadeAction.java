@@ -49,7 +49,7 @@ public class QueryAppFacadeAction extends AbstractAction<QueryAppResponse,QueryA
     public QueryAppResponse sysApp(QueryAppRequest request) throws BizException {
         QueryAppResponse response  = new QueryAppResponse();
         try {
-            response = excute(request);
+            response = excute(request,null,null);
         }catch (CommonRuntimeException e) {
             BizExceptionHandler.commonRuntimeExceptionHandle(APPCodeEnum.KPRP_RCDBS, e);
         } catch (CommonException e) {

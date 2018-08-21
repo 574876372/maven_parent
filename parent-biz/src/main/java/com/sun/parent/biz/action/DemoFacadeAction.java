@@ -1,6 +1,7 @@
 package com.sun.parent.biz.action;
 
 import com.sun.parent.biz.action.abs.AbstractAction;
+import com.sun.parent.biz.action.abs.AbstractLockAction;
 import com.sun.parent.common.enums.APPCodeEnum;
 import com.sun.parent.common.exception.base.CommonException;
 import com.sun.parent.common.exception.base.CommonRuntimeException;
@@ -23,7 +24,7 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Component("demoFacadeAction")
-public class DemoFacadeAction extends AbstractAction<TestDemoResponse,TestDemoRequest> {
+public class DemoFacadeAction extends AbstractLockAction<TestDemoResponse,TestDemoRequest> {
 
 
     @Autowired
@@ -32,7 +33,7 @@ public class DemoFacadeAction extends AbstractAction<TestDemoResponse,TestDemoRe
     public TestDemoResponse testDemo(TestDemoRequest request) throws BizException {
         TestDemoResponse response  = new TestDemoResponse();
         try {
-            response = excute(request);
+            response = excute(request,null,null);
         }catch (CommonRuntimeException e) {
             BizExceptionHandler.commonRuntimeExceptionHandle(APPCodeEnum.KPRP_RCDBS, e);
         } catch (CommonException e) {
@@ -50,7 +51,6 @@ public class DemoFacadeAction extends AbstractAction<TestDemoResponse,TestDemoRe
         response.setName(demoResult.getName());
         return  response;
     }
-
 
     @Override
     public void after(TestDemoResponse response, TestDemoRequest requset, Map<String, Object> paramMap) throws CommonException {
