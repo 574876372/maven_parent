@@ -6,11 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f243ecd3-a8a5-4aa7-877b-5a6cb28eaa6b" name="Default" comment="修改查询数据条件">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="f243ecd3-a8a5-4aa7-877b-5a6cb28eaa6b" name="Default" comment="maven修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-facade/pom.xml" afterPath="$PROJECT_DIR$/parent-facade/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/parent-biz/target/" />
     <ignored path="$PROJECT_DIR$/parent-dao/target/" />
@@ -89,6 +86,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -459,7 +461,7 @@
       <workItem from="1534477484762" duration="11797000" />
       <workItem from="1534727204310" duration="1210000" />
       <workItem from="1534814401171" duration="9914000" />
-      <workItem from="1553758586329" duration="65000" />
+      <workItem from="1553758586329" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis生成文件">
       <created>1532081607832</created>
@@ -566,11 +568,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534489492061</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="maven修改">
+      <created>1553758709939</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553758709940</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199792000" />
+    <option name="totallyTimeSpent" value="200291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -640,7 +649,8 @@
     <MESSAGE value="db文件外置" />
     <MESSAGE value="修改查询数据条件" />
     <MESSAGE value="参数校验修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="参数校验修改" />
+    <MESSAGE value="maven修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="maven修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
