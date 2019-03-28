@@ -1,7 +1,7 @@
 
 # Intellij
 *.iml
-.idea/*
+.idea/
 .idea/workspace.xml
 .idea/modules.xml
 parent-biz/target/
@@ -12,3 +12,5 @@ parent-integration/target/
 parent-service/target/
 parent-test/target/
 parent-web/target/
+.project
+.settings/

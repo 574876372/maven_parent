@@ -7,26 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f243ecd3-a8a5-4aa7-877b-5a6cb28eaa6b" name="Default" comment="修改查询数据条件">
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractLockAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/LockStatusEnums.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-dao/src/main/java/com/sun/parent/dao/mapper/TaskLockDOMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-dao/src/main/java/com/sun/parent/dao/model/TaskLockDO.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-dao/src/main/resources/sqlMapper/TaskLockDOMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/bussiness/TaskLockBusService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/bussiness/impl/TaskLockBusServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/TaskLockService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/bean/TaskLock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/impl/TaskLockServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/DemoFacadeAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/QueryAppFacadeAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/QueryAppFacadeAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/SynchronizeAppFacadeAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/SynchronizeAppFacadeAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractAction.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractAction.java" />
-      <change beforePath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/Checker.java" afterPath="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/Checker.java" />
-      <change beforePath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonErrorCode.java" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonErrorCode.java" />
-      <change beforePath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonRespCode.java" afterPath="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonRespCode.java" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/src/main/resources/configs/spring/spring.xml" afterPath="$PROJECT_DIR$/parent-dao/src/main/resources/configs/spring/spring.xml" />
-      <change beforePath="$PROJECT_DIR$/parent-dao/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/parent-dao/src/main/resources/generatorConfig.xml" />
+      <change beforePath="$PROJECT_DIR$/parent-facade/pom.xml" afterPath="$PROJECT_DIR$/parent-facade/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/parent-biz/target/" />
     <ignored path="$PROJECT_DIR$/parent-dao/target/" />
@@ -58,121 +42,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractLockAction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractLockAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1272#1288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParamCheckException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/param/ParamCheckException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BizException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/biz/BizException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IErrorCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/exception/base/IErrorCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonErrorCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonErrorCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-              <folding>
-                <element signature="e#4257#4258#0" expanded="true" />
-                <element signature="e#4283#4284#0" expanded="true" />
-                <element signature="e#4607#4608#0" expanded="true" />
-                <element signature="e#4639#4640#0" expanded="true" />
-                <element signature="e#4874#4875#0" expanded="true" />
-                <element signature="e#4901#4902#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonRespCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonRespCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultCheckerProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/proxy/DefaultCheckerProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdempotentChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/IdempotentChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParamChecker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/ParamChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/bean/App.java" />
         <option value="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/bussiness/impl/AppBusService.java" />
         <option value="$PROJECT_DIR$/parent-service/src/main/java/com/sun/parent/service/repository/impl/DemoServiceImpl.java" />
         <option value="$PROJECT_DIR$/parent-dao/src/main/java/com/sun/parent/dao/mapper/DemoDOMapper.java" />
@@ -279,6 +148,7 @@
         <option value="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/checker/Checker.java" />
         <option value="$PROJECT_DIR$/parent-common/src/main/java/com/sun/parent/common/enums/CommonErrorCode.java" />
         <option value="$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/action/abs/AbstractLockAction.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -306,17 +176,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="maven_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="maven_parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -342,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,9 +213,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,6 +459,7 @@
       <workItem from="1534477484762" duration="11797000" />
       <workItem from="1534727204310" duration="1210000" />
       <workItem from="1534814401171" duration="9914000" />
+      <workItem from="1553758586329" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="mybatis生成文件">
       <created>1532081607832</created>
@@ -709,7 +570,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199120000" />
+    <option name="totallyTimeSpent" value="199792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -726,13 +587,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4447983" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49044585" sideWeight="0.4921875" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42781317" sideWeight="0.49270833" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42781317" sideWeight="0.49270833" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
@@ -744,6 +604,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1060,97 +921,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parent-biz/src/main/java/com/sun/parent/biz/impl/SynchronizeAppFacadeBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.sun:parent-web:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.sun:parent-web:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.sun:parent-web:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.3</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.3/commons-logging:commons-logging:jar:1.2</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.ow2.asm:asm:jar:5.2</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.apache.ant:ant:jar:1.9.6</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/cglib:cglib:jar:3.2.5/org.apache.ant:ant:jar:1.9.6/org.apache.ant:ant-launcher:jar:1.9.6</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.springframework:spring-jdbc:jar:4.1.7.RELEASE</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.springframework:spring-jdbc:jar:4.1.7.RELEASE/org.springframework:spring-tx:jar:4.1.7.RELEASE</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.0.1.Final</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.0.1.Final/org.jboss.logging:jboss-logging:jar:3.1.1.GA</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.hibernate:hibernate-validator:jar:5.0.1.Final/com.fasterxml:classmate:jar:0.8.0</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/javax.validation:validation-api:jar:1.1.0.Final</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/com.thoughtworks.xstream:xstream:jar:1.4.2</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/com.thoughtworks.xstream:xstream:jar:1.4.2/xmlpull:xmlpull:jar:1.1.3.1</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/com.thoughtworks.xstream:xstream:jar:1.4.2/xpp3:xpp3_min:jar:1.1.4c</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-codec:commons-codec:jar:1.10</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.6</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.6/org.apache.httpcomponents:httpcore:jar:4.3.3</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.6/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-httpclient:commons-httpclient:jar:3.1</node>
-            <node x="" y="">com.sun:parent-common:jar:1.0-SNAPSHOT/commons-httpclient:commons-httpclient:jar:3.1/commons-logging:commons-logging:jar:1.0.4</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/mysql:mysql-connector-java:jar:5.1.31</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/tk.mybatis:mapper:jar:3.3.9</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/tk.mybatis:mapper:jar:3.3.9/javax.persistence:persistence-api:jar:1.0</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/org.mybatis.generator:mybatis-generator-core:jar:1.3.5</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/c3p0:c3p0:jar:0.9.1.2</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/org.mybatis:mybatis:jar:3.3.1</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-dao:jar:1.0-SNAPSHOT/org.mybatis:mybatis-spring:jar:1.2.4</node>
-            <node x="" y="">com.sun:parent-biz:jar:1.0-SNAPSHOT/com.sun:parent-service:jar:1.0-SNAPSHOT/com.sun:parent-integration:jar:1.0-SNAPSHOT</node>
-            <node x="" y="">com.sun:parent-facade:jar:0.0.1-SNAPSHOT</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.1.7.RELEASE/org.springframework:spring-beans:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.1.7.RELEASE/org.springframework:spring-core:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.1.7.RELEASE/org.springframework:spring-expression:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-aop:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:4.1.7.RELEASE/org.springframework:spring-aop:jar:4.1.7.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">org.springframework:spring-test:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context-support:jar:4.1.7.RELEASE</node>
-            <node x="" y="">org.freemarker:freemarker:jar:2.3.23</node>
-            <node x="" y="">org.apache.commons:commons-lang3:jar:3.3</node>
-            <node x="" y="">org.slf4j:slf4j-api:jar:1.7.12</node>
-            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.3</node>
-            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.3/ch.qos.logback:logback-core:jar:1.1.3</node>
-            <node x="" y="">org.logback-extensions:logback-ext-spring:jar:0.1.1</node>
-            <node x="" y="">org.slf4j:jcl-over-slf4j:jar:1.7.12</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/com.wordnik:swagger-core_2.9.1:jar:1.2.0</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/com.wordnik:swagger-core_2.9.1:jar:1.2.0/commons-lang:commons-lang:jar:2.4</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/com.wordnik:swagger-annotations_2.9.1:jar:1.2.0</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/com.google.guava:guava:jar:13.0.1</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/org.scala-lang:scala-library:jar:2.9.1</node>
-            <node x="" y="">com.mangofactory:swagger-springmvc:jar:0.4.0/javax.servlet:servlet-api:jar:2.5</node>
-            <node x="" y="">com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.4.1</node>
-            <node x="" y="">com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.4.1/com.fasterxml.jackson.core:jackson-core:jar:2.4.1</node>
-            <node x="" y="">com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.4.1/com.fasterxml.jackson.core:jackson-databind:jar:2.4.1</node>
-            <node x="" y="">com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.4.1/com.fasterxml.jackson.core:jackson-databind:jar:2.4.1/com.fasterxml.jackson.core:jackson-annotations:jar:2.4.0</node>
-            <node x="" y="">com.alibaba:fastjson:jar:1.2.8</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.23688254665203073" x="2258.0" y="520.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parent-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1162,9 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,8 +968,8 @@
         <state relative-caret-position="340">
           <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="false" />
+            <element signature="e#866#867#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1320,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1328,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,7 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,16 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#497#498#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#571#572#0" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#638#639#0" expanded="false" />
-            <element signature="e#665#666#0" expanded="false" />
-            <element signature="e#705#706#0" expanded="false" />
-            <element signature="e#737#738#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1377,7 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1385,16 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
-          <folding>
-            <marker date="1534818946659" expanded="true" signature="1049:1157" ph="select from t_d_task_lock" />
-            <marker date="1534818946659" expanded="true" signature="1249:1620" ph="insert into t_d_task_lock... " />
-            <marker date="1534818946659" expanded="true" signature="3087:3793" ph="update t_d_task_lock... " />
-            <marker date="1534818946659" expanded="true" signature="3897:4275" ph="update t_d_task_lock... " />
-            <marker date="1534818946659" expanded="true" signature="4362:4518" ph="UPDATE t_d_task_lock S... " />
-            <marker date="1534818946659" expanded="true" signature="4612:4953" ph="insert into t_d_task_lock... " />
-            <marker date="1534818946659" expanded="true" signature="5050:5290" ph="UPDATE t_d_task_lock... " />
-            <marker date="1534818946659" expanded="true" signature="5389:5625" ph="UPDATE t_d_task_lock... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1402,9 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
           <caret line="46" column="25" lean-forward="false" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1412,9 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="74" column="30" lean-forward="false" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,9 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1432,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1440,7 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="91" lean-forward="false" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,9 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="114" lean-forward="true" selection-start-line="14" selection-start-column="114" selection-end-line="14" selection-end-column="114" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1482,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1506,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1514,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="32" column="10" lean-forward="false" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1522,10 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1533,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1541,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1549,14 +1264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="e#4257#4258#0" expanded="true" />
-            <element signature="e#4283#4284#0" expanded="true" />
-            <element signature="e#4607#4608#0" expanded="true" />
-            <element signature="e#4639#4640#0" expanded="true" />
-            <element signature="e#4874#4875#0" expanded="true" />
-            <element signature="e#4901#4902#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1564,10 +1271,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1272#1288#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="366" column="23" lean-forward="true" selection-start-line="366" selection-start-column="23" selection-end-line="366" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
