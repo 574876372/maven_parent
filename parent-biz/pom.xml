@@ -51,6 +51,17 @@
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
         <!-- logback end -->
+
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+        <!-- dubbo 结束 -->
         
     </dependencies>
 
